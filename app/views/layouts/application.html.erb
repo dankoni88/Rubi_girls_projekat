@@ -11,10 +11,6 @@
   </head>
 
   <body background="http://railsgirls.com/images/novisad/meta.png">
-  <div class="container">
-  <%= yield %>
-</div>
-  </body>
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -33,4 +29,16 @@
     </div>
   </div>
 </nav>
+  <div class="container">
+  <%= yield %>
+</div>
+<footer>
+  <div class="container">
+    Rails Girls <%= Time.now.year %>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+  </body>
+  
 </html>
